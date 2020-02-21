@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NameQuiz_App</string>
+    <string name="Velkommen_til_navequiz_appen">Velkommen til NaveQuiz appen!</string>
+    <string name="Take_Quiz"> Take Quiz</string>
+    <string name="Start"> START</string>
+    <string name="add">Add </string>
+    <string name="check_answer">Check Answer</string>
+    <string name="add_animal">Add animal</string>
+    <string name="enter_the_name_of_the_animal">Enter the name of the Animal</string>
+    <string name="about_quiz">About Quiz</string>
+    <string name="database">DATABASE</string>
+    <string name="save">SAVE</string>
+</resources>
