@@ -1,7 +1,6 @@
 package com.example.namequiz_app;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +20,7 @@ public class QuizActivity extends AppCompatActivity {
     TextView score;
     int image;
     Button checkAnswer, backButton;
-    static int scorePoints = 0;
+    static int scorePoints = 0; // Remains im memory while the program is running
     static boolean answ = false;
 
     ArrayList<Animals> aList = new ArrayList<>();
@@ -51,7 +50,7 @@ public class QuizActivity extends AppCompatActivity {
         //Lager random quiz ved å ta hente navn og bilde fra listen
         correctA = aList.get(random).getName().toLowerCase();
         image = aList.get(random).getImage();
-        quizImage.setImageResource(image);
+        quizImage.setImageResource(image); //expects an image from drawable
 
         //Tar deg tilbake til forrige acitivity
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -76,7 +75,7 @@ public class QuizActivity extends AppCompatActivity {
                     score.setText("Score: " + scorePoints);
                 }
                 //Fjerner editTexten fra user input og genererer en ny random bilde og navn fra listen med dyr som neste slide i quizzen
-                answer.setText(null);
+                answer.setText(null); //går bort d du har skrevet inn også fortsetter quizzn
                 int newRandom = r.nextInt(aList.size());
                 image = aList.get(newRandom).getImage();
                 correctA = aList.get(newRandom).getName().toLowerCase();
